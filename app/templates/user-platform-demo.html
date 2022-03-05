@@ -2,23 +2,25 @@
 
 {% block content %}
 <div>
-    <section class="p-2 mb-4">
-        <h1>By User and Platform Demo</h1>
+  <section class="p-2 mb-4">
+    <h1>By User and Platform Demo</h1>
 
-        <form>
-            <div class="mb-3 input-group">
-                <div class=" mb-2 input-group flex-nowrap">
-                  <span class="input-group-text" id="addon-wrapping">@</span>
-                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-                </div>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">Twitter</option>
-                  <option value="2">Reddit</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </section>
+    <form>
+      <div class="mb-3 input-group">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          {% for o in data.options %}
+          <option {{ o.icon_class }}" value="{{ o.name }}">{{ o.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="mb-2 input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+          aria-describedby="addon-wrapping">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
 </div>
 {% endblock %}
