@@ -1,17 +1,19 @@
 from app import app
+from flask import render_template
 
 @app.route('/')
 def index():
-    return "Isitabot"
+    return render_template("index.html")
+
 
 @app.route('/about')
 def about():
-    return "About isitabot"
+    return render_template("about.html")
 
 @app.route('/api/v1/resources/text')
 def api_index():
-    return "API Index"
+    return ""
 
 @app.route('/api/v1/resources/social/:user/:platform')
 def api_user_platform():
-    return "API resource $USER $PLATFORM"
+    return ""
