@@ -8,6 +8,7 @@ bs4==0.0.1
 certifi==2021.5.30
 chardet==4.0.0
 click==7.1.2
+coverage==6.3.2
 distlib==0.3.1
 fastapi==0.63.0
 filelock==3.0.12
@@ -45,7 +46,7 @@ soupsieve==2.2.1
 SQLAlchemy==1.4.11
 starlette==0.13.6
 toml==0.10.2
-typed-ast==1.4.2
+typed-ast==1.5.2
 typer==0.3.2
 typing-extensions==3.7.4.3
 urllib3==1.26.5
