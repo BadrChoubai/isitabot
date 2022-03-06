@@ -1,5 +1,5 @@
 from flask import request, Blueprint
-from src.utils.validation import filter_requests, parameters
+from utils.validation import filter_requests, parameters
 
 api_bp = Blueprint('api', __name__)
 

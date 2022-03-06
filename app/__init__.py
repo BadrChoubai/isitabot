@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, request, render_template
 from app.api.api import api_bp
-from src.utils.validation import filter_requests, parameters
+from utils.validation import filter_requests, parameters
 
 def create_app(test_config=None):
     # create and configure the app
