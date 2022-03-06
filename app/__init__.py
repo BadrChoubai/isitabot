@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, request, render_template
 
-# from validation import filter_requests, parameters
+from validation import filter_requests, parameters
 from api import api_bp
 
 
