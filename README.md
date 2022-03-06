@@ -24,7 +24,7 @@ To install the isitabot program:
 - Start the application with `./run.sh`. It will be hosted at `localhost:5000` by default
 
 ## API Usage
-todo once setup on app
+To use the API, send the text you wish to test in URL encoding to `http://localhost:5000/api/v1/resources/text?encoded_text=`. A sample query can be seen by clicking [here](http://localhost:5000/api/v1/resources/text?encoded_text=No%20less%20significant%20than%20Putin%E2%80%99s%20strategic%20error%20have%20been%20the%20Russian%20army%E2%80%99s%20tactical%20blunders.).
 
 ## Datasets used for ML development:
 https://botometer.osome.iu.edu/bot-repository/
