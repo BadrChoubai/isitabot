@@ -1,8 +1,9 @@
 import os
 
 from flask import Flask, request, render_template
-from app.api.api import api_bp
-from utils.validation import filter_requests, parameters
+from api import api_bp
+from validation import filter_requests, parameters
+
 
 def create_app(test_config=None):
     # create and configure the app
@@ -22,36 +23,31 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-
     @app.route('/')
     def index():
         return render_template("index.html")
-
 
     @app.route('/text-demo', methods=["GET", "POST"])
     def comment_demo():
         if request.method == 'POST':
             form = filter_requests(request.form, parameters["text_parameters"])
-            return form 
+            return form
 
         return render_template("text-demo.html")
-
 
     @app.route('/user-platform-demo', methods=["GET", "POST"])
     def user_platform_demo():
         data = {"options": ["Twitter", "Reddit"]}
 
         if request.method == 'POST':
-            form = filter_requests(request.form, parameters["user_platform_parameters"])
-            return form 
+            form = filter_requests(
+                request.form, parameters["user_platform_parameters"])
+            return form
 
         return render_template("user-platform-demo.html", data=data)
-
 
     @app.route('/about')
     def about():
         return render_template("about.html")
 
-
     return app
-
