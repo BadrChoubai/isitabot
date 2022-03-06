@@ -5,18 +5,17 @@
   <section class="p-2 mb-4">
     <h1>By User and Platform Demo</h1>
 
-    <form>
+    <form method="POST">
       <div class="mb-3 input-group">
-        <select class="form-select" aria-label="Default select example">
+        <select name="platform" class="form-select" aria-label="Default select example">
           <option selected>Open this select menu</option>
           {% for o in data.options %}
-          <option {{ o.icon_class }}" value="{{ o.name }}">{{ o.name }}</option>
+          <option value="{{ o }}">{{ o }}</option>
           {% endfor %}
         </select>
       </div>
       <div class="mb-2 input-group flex-nowrap">
-        <span class="input-group-text" id="addon-wrapping">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+        <input name="username" type="text" class="form-control" placeholder="Username" aria-label="Username"
           aria-describedby="addon-wrapping">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>

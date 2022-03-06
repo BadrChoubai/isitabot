@@ -3,12 +3,12 @@
 {% block content %}
 <div>
     <section class="p-2 mb-4">
-        <h1>Comment Demo</h1>
+        <h1>Plain Text Demo</h1>
 
-        <form>
+        <form method="POST">
             <div class="mb-3 input-group">
-              <span class="input-group-text">Paste comment</span>
-              <textarea class="form-control" aria-label="With textarea"></textarea>
+              <span class="input-group-text">Paste Text</span>
+              <textarea name="encoded_text" class="form-control" aria-label="With textarea"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
