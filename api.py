@@ -1,8 +1,8 @@
-from app import models
 from flask import request, Blueprint
 from validation import filter_requests, parameters
 import LM_probabilities
 import analyze
+import models
 
 api_bp = Blueprint('api', __name__)
 
