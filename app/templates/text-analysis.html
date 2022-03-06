@@ -3,7 +3,7 @@
 {% block content %}
 <div>
     <section class="p-2 mb-4">
-        <h1>Plain Text Demo</h1>
+        <h1>Plain Text Analysis</h1>
 
         <form method="POST">
             <div class="mb-3 input-group">
@@ -12,6 +12,12 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+    </section>
+    <section class="p-2 mb-4">
+        <h2>Analysis Results</h2>
+        <div class="container">
+            <p class="lead">{{ analysis_result }}</p>
+        </div>
     </section>
 </div>
 {% endblock %}
