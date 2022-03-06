@@ -1,8 +1,8 @@
 import os
 
-from flask import Flask, render_template, request
-from werkzeug.datastructures import ImmutableMultiDict
+from flask import Flask, request, render_template
 from app.api.api import api_bp
+from src.utils.validation import filter_requests, parameters
 
 def create_app(test_config=None):
     # create and configure the app
@@ -28,15 +28,23 @@ def create_app(test_config=None):
         return render_template("index.html")
 
 
-    @app.route('/comment-demo')
+    @app.route('/text-demo', methods=["GET", "POST"])
     def comment_demo():
-        return render_template("comment-demo.html")
+        if request.method == 'POST':
+            form = filter_requests(request.form, parameters["text_parameters"])
+            return form 
+
+        return render_template("text-demo.html")
 
 
-    @app.route('/user-platform-demo')
+    @app.route('/user-platform-demo', methods=["GET", "POST"])
     def user_platform_demo():
-        data = {"options": [{"name": "Twitter", "icon_class": "bi-twitter"},
-                            {"name": "Reddit", "icon_class": "bi-reddit"}]}
+        data = {"options": ["Twitter", "Reddit"]}
+
+        if request.method == 'POST':
+            form = filter_requests(request.form, parameters["user_platform_parameters"])
+            return form 
+
         return render_template("user-platform-demo.html", data=data)
 
 
