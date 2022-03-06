@@ -26,7 +26,7 @@ To install the isitabot program:
 ## API Usage
 todo once setup on app
 
-Datasets used for ML development:
+## Datasets used for ML development:
 https://botometer.osome.iu.edu/bot-repository/
 https://github.com/gunthercox/chatterbot-corpus/tree/master/chatterbot_corpus/data/english
 https://github.com/ADGEfficiency/creative-writing-with-gpt2/blob/master/examples/alan-watts.md
