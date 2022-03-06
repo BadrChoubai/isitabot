@@ -28,7 +28,11 @@ todo once setup on app
 
 ## Datasets used for ML development:
 https://botometer.osome.iu.edu/bot-repository/
+
 https://github.com/gunthercox/chatterbot-corpus/tree/master/chatterbot_corpus/data/english
+
 https://github.com/ADGEfficiency/creative-writing-with-gpt2/blob/master/examples/alan-watts.md
+
 https://blog.machinewrites.com/gpt-2-generated-chatbot-development-article-339/
+
 https://github.com/gunthercox/chatterbot-corpus/tree/master/chatterbot_corpus/data/english
