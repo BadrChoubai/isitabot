@@ -1,4 +1,4 @@
-from os import access
+import os
 import tweepy
 import time
 from dotenv import load_dotenv
