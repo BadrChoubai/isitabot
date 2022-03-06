@@ -1,14 +1,14 @@
 # Project: Detecting the Text of Users and Bots Using Machine Learning
 
 Team Members:
-    - Luckandlogic
+    - Max
     - Spoon
     - Butters
     - George
 
 
 # isitabot
-isitabot is an adversarial model to detect the likelyhood text being machine generated. Our text analysis tool can be used via a locally hosted application, or directly through its API.
+isitabot is an adversarial model to detect the likelihood of text being machine generated. Our text analysis tool can be used graphically or headlessly via a locally hosted application web application.
 
 ## How to install
 Requirements:
@@ -25,3 +25,14 @@ To install the isitabot program:
 
 ## API Usage
 todo once setup on app
+
+## Datasets used for ML development:
+https://botometer.osome.iu.edu/bot-repository/
+
+https://github.com/gunthercox/chatterbot-corpus/tree/master/chatterbot_corpus/data/english
+
+https://github.com/ADGEfficiency/creative-writing-with-gpt2/blob/master/examples/alan-watts.md
+
+https://blog.machinewrites.com/gpt-2-generated-chatbot-development-article-339/
+
+https://github.com/gunthercox/chatterbot-corpus/tree/master/chatterbot_corpus/data/english
