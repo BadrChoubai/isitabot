@@ -12,7 +12,7 @@ import models
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__)
-    # app.register_blueprint(api_bp)
+    app.register_blueprint(api_bp)
 
     # models = LM_probabilities.get_default_models()
 
