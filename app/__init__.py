@@ -1,14 +1,15 @@
 import os
 
 from flask import Flask, request, render_template
+
+# from validation import filter_requests, parameters
 from api import api_bp
-from validation import filter_requests, parameters
 
 
 def create_app(test_config=None):
     # create and configure the app
-    app = Flask(__name__, instance_relative_config=True)
-    app.register_blueprint(api_bp)
+    app = Flask(__name__)
+    # app.register_blueprint(api_bp)
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
