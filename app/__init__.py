@@ -6,7 +6,7 @@ from validation import filter_requests, parameters
 from api import api_bp
 import LM_probabilities
 import analyze
-import models
+from models_gen import models
 
 
 def create_app(test_config=None):
