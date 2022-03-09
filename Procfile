@@ -1,1 +1,1 @@
-web: cd api && gunicorn --chdir api main:main
+web: cd api && gunicorn "main:create_app()"
