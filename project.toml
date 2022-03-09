@@ -1,2 +1,3 @@
 [[build.buildpacks]]
 uri = "heroku/python"
+path = "api/"
