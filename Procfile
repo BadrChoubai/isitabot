@@ -1,1 +1,1 @@
-web: gunicorn --chdir api "main:create_app()"
+web: cd api && source venv/bin/activate && gunicorn "main:create_app()"
