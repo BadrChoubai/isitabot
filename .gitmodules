@@ -1,7 +1,0 @@
-[submodule "api"]
-	path = api 
-	url = https://github.com/BadrChoubai/isitabot/api
-
-[submodule "app"]
-	path = app 
-	url = https://github.com/BadrChoubai/isitabot/app
