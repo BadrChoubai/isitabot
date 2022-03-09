@@ -1,1 +1,1 @@
-web: cd api && python3 -m venv venv && source venv/bin/activate && gunicorn "main:create_app()"
+web: cd api && gunicorn "main:create_app()"
