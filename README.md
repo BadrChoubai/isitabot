@@ -17,3 +17,4 @@ locally hosted application web application.
 - For instruction on running the app locally refer to both
   the API's README.md file and the App's README.md
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d10204c-8c66-42c1-960e-1aee4d8a891a/deploy-status)](https://app.netlify.com/sites/isitabot/deploys)
