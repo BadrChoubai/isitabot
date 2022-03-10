@@ -1,4 +1,5 @@
 from werkzeug.datastructures import ImmutableMultiDict
+from typing import List
 
 parameters = {
 	"text_parameters": [
@@ -11,9 +12,10 @@ parameters = {
 }
 
 
+
 def filter_requests(
 received_data: ImmutableMultiDict,
-parameters: list[str]
+parameters: List[str]
 ) -> dict:
 	# https://stackoverflow.com/questions/50396370/multiple-queries-in-one-elasticsearch-query
 	# Used for matching on multiple parameters at a time.
