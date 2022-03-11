@@ -3,16 +3,16 @@ import { Ref, ref } from 'vue';
 import Card from '../components/Card.vue';
 const sampleTexts = [
 	{
-		title: "Crime and Punishment",
-		body: "lorem ipsum dolor site amet"
+		title: "Anna Karenina",
+		body: "Happy families are all alike; every unhappy family is unhappy in its own way Everything was in confusion in the Oblonskys’ house The wife had discovered that the husband was carrying on an intrigue with a French girl, who had been a governess in their family, and she had announced to her husband that she could not go on living in the same house with him."
 	},
 	{
-		title: "Political Twitter Bot",
-		body: "lorem ipsum dolor site amet"
+		title: "GPT-2 Generated Creative Writing Piece",
+		body: "The wisdom of our ancestors was the sword; meant for use in war. The sword was of great power, able to annihilate any enemy. It was divine knowledge. Imperial literature contains stories of emperor Anu using the sword."
 	},
 	{
 		title: "Bot-Generated News Article",
-		body: "lorem ipsum dolor site amet"
+		body: "Here to help you develop your Chatbot to become a winner in your industry. Let’s get started and build a bot that saves editors 50% on their shipping costs.  Our fast and gentle algorithms detect the common mistakes people make when typing about themselves and match the feedback from existing users to give users a much better experience."
 	},
 ]
 
@@ -28,6 +28,7 @@ const makeItLearn = (textInput: string) => {
 }
 
 </script>
+
 <template>
 	<div>
 		<section class="p-2 mb-4">
